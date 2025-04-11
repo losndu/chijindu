@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@layer base {
+	:root {
+        font-size: 16px;
+        /*typefaces*/
+		--inter: 'Inter', sans-serif;
+        /*colors*/
+		--foreground: 0, 0%, 28.2%;
+    }
+
+    body {
+        font-family: var(--inter);
+        font-size: 1.25rem;
+    }
+}
