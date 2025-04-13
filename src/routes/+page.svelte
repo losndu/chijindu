@@ -1,10 +1,11 @@
 <script lang="ts">
-	import BaseHead from '$lib/components/BaseHead.svelte';
+	import BaseHead from '$lib/components/server/BaseHead.svelte';
+	import Experience from '$lib/components/ui/Experience.svelte';
 </script>
 
 <BaseHead />
 
-<div class="font-inter mx-auto flex flex-col gap-y-16 px-4 tracking-tight">
+<div class="font-inter mx-auto flex flex-col gap-y-16 px-4 py-4 tracking-tight">
 	<section class="mx-auto mt-24 flex flex-col gap-y-4 sm:w-full md:w-2xl">
 		<h1 class="text-3xl font-bold">Hi, I'm ndu.</h1>
 		<p>
@@ -27,6 +28,8 @@
 			valuable solutions
 		</p>
 	</section>
+
+	<Experience />
 
 	<section class="mx-auto flex flex-col gap-y-8 sm:w-full md:w-2xl">
 		<h2 class="text-sm text-gray-500">Ideas & Writing</h2>
@@ -71,6 +74,10 @@
 				</div>
 			</li>
 		</ul>
+
+		<div class="mt-6">
+			<a href="https://google.com" class="w-3xs bg-gray-100 p-2 rounded-sm text-sm font-medium"> Read all articles </a>
+		</div>
 	</section>
 
 	<section class="mx-auto flex flex-col gap-y-8 sm:w-full md:w-2xl">
@@ -97,7 +104,7 @@
 						alt=""
 					/>
 				</div>
-				<p class="">
+				<p>
 					Writing is a powerful tool for self-reflection and growth. It helps me clarify my thoughts
 					and share my journey with others. Through writing, I can connect with like-minded
 					individuals and build a community around shared experiences.
@@ -123,6 +130,11 @@
 						alt=""
 					/>
 				</div>
+				<p>
+					Writing is a powerful tool for self-reflection and growth. It helps me clarify my thoughts
+					and share my journey with others. Through writing, I can connect with like-minded
+					individuals and build a community around shared experiences.
+				</p>
 			</li>
 		</ul>
 	</section>
